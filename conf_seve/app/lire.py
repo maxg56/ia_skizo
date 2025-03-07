@@ -1,6 +1,6 @@
 
 
-def test():
+def lire_arduino():
     try:
         with open("/dev/ttyACM0", "r") as device:
             for line in device:

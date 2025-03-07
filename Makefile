@@ -1,5 +1,6 @@
-all: compile upload
-
+all:
+	source conf_seve/venv/bin/activate
+	python3 conf_seve/app/main.py
 compile:
 	arduino-cli compile --fqbn arduino:mbed_nano:nano33ble ser
 
